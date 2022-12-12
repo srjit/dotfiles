@@ -1,0 +1,29 @@
+[general]
+accounts = Gmail
+maxsyncaccounts = 2
+
+[Account Gmail]
+localrepository = LocalGmail
+remoterepository = RepositoryGmail
+#autorefresh = 5
+quick = 10
+postsynchook = mu index --maildir ~/Maildir
+
+[Repository LocalGmail]
+type = Maildir
+localfolders = ~/Maildir/Gmail
+
+[Repository RepositoryGmail]
+type = Gmail
+maxconnections = 2
+remoteuser = sreejith2904@gmail.com
+remotepass = 
+folderfilter = lambda foldername: foldername in ['INBOX', 'Sent']
+sslcacertfile = /opt/local/share/curl/curl-ca-bundle.crt
+startdate = 2021-12-01
+
+
+# These are effectively the same as the above
+# [Account Exchange]
+# [Repository LocalExchange]
+# [Repository RemoteExchange] 
