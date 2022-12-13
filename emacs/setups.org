@@ -1,0 +1,29 @@
+
+
+* Mail
+
+ - Install offlineimap
+ - Setup .offlineimaprc (google app key for password)
+ - Run offlineimaprc
+ - Install mu
+   + mu init --maildir ~/Maildir --my-address=sreejith2904@gmail.com
+   + mu index
+ - Setup mu4e
+   (add-to-list 'load-path "/opt/homebrew/Cellar/mu/1.8.13/share/emacs/site-lisp/mu/mu4e")
+   (require 'mu4e)
+ - Setup mu4e-dashboard
+
+* Org Jupyter
+
+ - venv-workon mllib
+ - C-x p 
+ - load-file ~/.emacs.d/scripts/org-ipython.el
+ - jedi:start-dedicated-server
+
+* Org Mode Latex Export
+
+ - Getting a code structure block: C-c C-,
+ - Exporting to Latex: C-x C-e l p
+ - Exporting to HTML: C-x C-e h h
+
+     
