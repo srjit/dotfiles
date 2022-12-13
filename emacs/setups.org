@@ -2,10 +2,10 @@
 
 * Mail
 
- - Install offlineimap
+ - Install offlineimap (brew install)
  - Setup .offlineimaprc (google app key for password)
  - Run offlineimaprc
- - Install mu
+ - Install mu  (brew install)
    + mu init --maildir ~/Maildir --my-address=sreejith2904@gmail.com
    + mu index
  - Setup mu4e
