@@ -97,6 +97,3 @@
 
 
 
-(add-to-list 'load-path "/opt/homebrew/Cellar/mu/1.8.13/share/emacs/site-lisp/mu/mu4e")
-(require 'mu4e)
-(load-file "/Users/sreejithsreekumar/software/mu4e-dashboard/mu4e-dashboard.el")
