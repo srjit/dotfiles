@@ -34,6 +34,7 @@
 
 (add-hook 'prog-mode-hook #'whitespace-mode)
 
+(setq speedbar-initial-expansion-list-name "buffers")
 (setq speedbar-use-images nil)
 (make-face 'speedbar-face)
 (set-face-font 'speedbar-face "Inconsolata-13")
